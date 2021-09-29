@@ -12,7 +12,7 @@ blue = LED(27)
 ## GUI DEFINITIONS ##
 win = Tk()
 win.title("LED Toggler")
-myFont = tkinter.font.Font(family = 'Helvetica', size = 12, weight = "bold")
+myFont = tkinter.font.Font(family = 'Helvetica', size = 24, weight = "bold")
 
 ###EVENT FUCNTIONS
 def redToggle():
@@ -57,14 +57,14 @@ def close():
     win.destroy()
 
 ### WIDGETS
-redButton = Button(win, text = 'Turn RED On', font = myFont, command = redToggle, bg = 'bisque2', height = 1, width = 35)
+redButton = Button(win, text = 'Turn RED On', font = myFont, command = redToggle, bg = 'bisque2', height = 2, width = 35)
 redButton.grid(row=0, column=1)
 
-greenButton = Button(win, text = 'Turn GREEN On', font = myFont, command = greenToggle, bg = 'bisque2', height = 1, width = 35)
+greenButton = Button(win, text = 'Turn GREEN On', font = myFont, command = greenToggle, bg = 'bisque2', height = 2, width = 35)
 greenButton.grid(row=1, column=1)
 
-blueButton = Button(win, text = 'Turn BLUE On', font = myFont, command = blueToggle, bg = 'bisque2', height = 1, width = 35)
+blueButton = Button(win, text = 'Turn BLUE On', font = myFont, command = blueToggle, bg = 'bisque2', height = 2, width = 35)
 blueButton.grid(row=2, column=1)
 
-exitButton = Button(win, text = 'Exit', font = myFont, command = close, bg = 'red', height = 1, width = 6)
+exitButton = Button(win, text = 'Exit', font = myFont, command = close, bg = 'red', height = 2, width = 6)
 exitButton.grid(row=3, column=1)
